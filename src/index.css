@@ -1,0 +1,124 @@
+html,
+body,
+#root {
+    height: 100%;
+}
+
+h3 {
+    width: 300;
+}
+
+.b-grape {
+    color: #fff;
+    background-color: #6c63ff;
+    border-color: #6c63ff;
+}
+
+.b-grape:hover,
+.b-grape:active,
+.swal2-actions button {
+    background-color: #3f3d56 !important;
+    border-color: #3f3d56 !important;
+    color: #fff !important;
+}
+
+.t-grape {
+    color: #6c63ff;
+    font-weight: 500;
+}
+
+.form-control {
+    border: 1px solid #b1b1b1;
+}
+
+.form-control:focus,
+.btn:focus {
+    border-color: #3f3d56;
+    box-shadow: 0 0 0 0.2rem rgba(132, 0, 255, 0.25);
+}
+
+.list-group-item {
+    border: 1px solid rgb(63, 61, 86);
+}
+
+a {
+    color: #6c63ff;
+}
+
+.google {
+    color: #ff6584;
+    font-weight: 600;
+}
+
+a:hover,
+a:active {
+    color: #3f3d56;
+    text-decoration: none;
+}
+
+.background-light {
+    background-color: #ffffff;
+}
+
+.background-dark {
+    background-color: #f2f2f2;
+}
+
+
+/*sidebar*/
+
+.navbar {
+    background-color: #3f3d56;
+}
+
+
+/*alerts*/
+
+.alert {
+    padding: 0;
+    font-size: 0.8em;
+}
+
+.alert-ok {
+    color: green;
+}
+
+.alert-error {
+    color: crimson;
+}
+
+
+/*Repositories*/
+
+.repositories {
+    height: 400px;
+    overflow-y: auto;
+}
+
+.hide_profile {
+    display: none;
+}
+
+
+/*card*/
+
+.card img {
+    height: 200px;
+}
+
+
+/*footer*/
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f2f2f2;
+    color: #3f3d56;
+    text-align: center;
+}
+
+.navbar-nav {
+    flex-direction: row;
+}
