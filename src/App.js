@@ -25,8 +25,8 @@ function App() {
       <AlertState>
       <Router history={history}>
         <Switch>
-          <Route exact path='/buildTest' component={SignIn}/>
-          <Route exact path='/signup' component={SignUp}/>
+          <Route path='/buildTest' component={SignIn}/>
+          <Route path='/signup' component={SignUp}/>
           <PrivateRoute path='/me/:component' component={Me}/>
         </Switch>
       </Router>
