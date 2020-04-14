@@ -15,9 +15,13 @@ const Github = () => {
     const [response, setResponse] = useState(false);
     const [results, setResults] = useState([]);
 
-     useEffect(() => {
-        readApi();
-    }, [response])
+    //  useEffect(() => {
+    //     readApi();
+    // }, [response])
+
+    useEffect(() => {
+      readApi();
+  }, [response])
 
     const handleChange = e => {
         setSearch({
@@ -46,8 +50,7 @@ const Github = () => {
             setResponse(false);
         }
     }
-
-
+    
     const handleSubmit = e => {
         e.preventDefault();
         if(username.trim()===''){

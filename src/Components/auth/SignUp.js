@@ -147,7 +147,7 @@ const SignUp = () => {
             </form>
             <p className="mb-0 col-lg-12 p-0">
               {" "}
-              Already have an account? <Link to={"/"}>Sign In</Link>{" "}
+              Already have an account? <Link to={"/buildTest"}>Sign In</Link>{" "}
             </p>
           </div>
         </div>
