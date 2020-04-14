@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { HashRouter, Router, Switch, Route} from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import { useAuth0 } from "./react-auth0-spa";
 // Components
 import Me from './Components/me/Me';
@@ -20,19 +20,17 @@ function App() {
   }
 
   return (
-    <HashRouter basename='/'>
     <Fragment>
       <AlertState>
       <Router history={history}>
         <Switch>
-          <Route path='/buildTest' component={SignIn}/>
-          <Route path='/signup' component={SignUp}/>
+          <Route exact path='/' component={SignIn}/>
+          <Route exact path='/signup' component={SignUp}/>
           <PrivateRoute path='/me/:component' component={Me}/>
         </Switch>
       </Router>
       </AlertState>
     </Fragment>
-    </HashRouter>
   );
 }
 

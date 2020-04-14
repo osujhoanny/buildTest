@@ -44,7 +44,7 @@ const Navbar = () => {
                     <Link
                       className="nav-link"
                       onClick={() => logoutApp()}
-                      to="/buildTest"
+                      to="/"
                     >
                       Log out
                     </Link>
